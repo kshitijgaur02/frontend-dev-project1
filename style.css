@@ -45,7 +45,7 @@ body {
 
 .wallet-content {
     position: relative;
-    height: 800px;
+    height: 500px;
     padding-left: 30px;
     padding-right: 30px;
     display: grid;
@@ -77,6 +77,7 @@ body {
     float: left;
     width: 40%;
     padding: 2% 5% 0 5%;
+    
 }
 
 .tokens {
@@ -84,11 +85,14 @@ body {
     margin-top: 5px;
     border-radius: 6px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
 
-
+.tokens:hover{
+    background-color: #301a4a;
+}
 
 .token-name {
     display: flex;
