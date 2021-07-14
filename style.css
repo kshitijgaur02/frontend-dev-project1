@@ -57,7 +57,7 @@ body {
 }
 
 label{
-    color: #5d5c5e;
+    color: whitesmoke;
 }
 
 .wallet-details {
@@ -66,8 +66,7 @@ label{
 }
 .wallet-name{
     font-weight: 600;
-    color: #5d5c5e;
-    border-radius: 5px;
+    color: wheat;
     height: 30px;
     width: 70%;
 }
@@ -85,11 +84,14 @@ label{
     outline: 0;
 }
 
-.balance-header {
+.balance-header, .balance-display{
     float: left;
     width: 40%;
     padding: 2% 5% 0 5%;
-    
+    color: black;
+}
+.balance-header{
+    color: white;
 }
 
 .tokens {
@@ -137,11 +139,11 @@ label{
 }
 
 .token-balance div:nth-child(2){
-    color: #9b9b9b;
+    color: white;
 }
 
 .nft-details {
-    color: #5d5c5e ;
+    color: aliceblue ;
 }
 .options{
 
@@ -176,7 +178,6 @@ label{
     border-radius: 5px;
     text-align: center;
     font-size: 18px;
-    font-weight: 600px;
     margin: 10px;
     color: black;
     font-weight: 400;
@@ -185,5 +186,5 @@ label{
 
 .description {
     text-align: left;
-    color: #9b9b9b;
+    color: whitesmoke;
 }
