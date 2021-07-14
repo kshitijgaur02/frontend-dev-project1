@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #8c7b7b;
+    background-color: #1a0329;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -48,11 +48,16 @@ body {
 
 .wallet-content {
     position: relative;
-    height: 500px;
+    height: 100%;
     padding-left: 30px;
     padding-right: 30px;
     display: grid;
     grid-template-columns: 50% 50%;
+    
+}
+
+label{
+    color: #5d5c5e;
 }
 
 .wallet-details {
@@ -60,20 +65,16 @@ body {
     padding-right: 5%;
 }
 .wallet-name{
-    font-weight: normal;
-    text-align: center;
-    color: white;
-    background-color: #434342;
+    font-weight: 600;
+    color: #5d5c5e;
     border-radius: 5px;
     height: 30px;
     width: 70%;
 }
 
-.square {
-    height: 50px;
-    width: 50px;
-    width: 100%;
+.balance {
     height: 100%;
+    width: 100%;
     border-radius: 10px;
     background-image: linear-gradient(90deg, #8a18ed, #6f4791);
 }
@@ -84,7 +85,7 @@ body {
     outline: 0;
 }
 
-.square-header {
+.balance-header {
     float: left;
     width: 40%;
     padding: 2% 5% 0 5%;
@@ -138,6 +139,10 @@ body {
 .token-balance div:nth-child(2){
     color: #9b9b9b;
 }
+
+.nft-details {
+    color: #5d5c5e ;
+}
 .options{
 
     margin-bottom: 20px;
@@ -158,19 +163,27 @@ body {
     transition: 0.5;
 }
 .pix{
-    display: inline-block;
-    margin: 5px;
-    background-color: #191f2a;
+    width: 40%;
+    margin: 10px;
+    float: left;
+    background-image: linear-gradient(90deg, #8a18ed, #6f4791);
     padding: 20px;
     border-radius: 10px;
     color: white;
+    text-align: center;
 }
-p{
-    border: 1px solid white;
+.name {
     border-radius: 5px;
     text-align: center;
     font-size: 18px;
     font-weight: 600px;
-    margin: 10px 0;
-    color: olivedrab;
+    margin: 10px;
+    color: black;
+    font-weight: 400;
+    
+}
+
+.description {
+    text-align: left;
+    color: #9b9b9b;
 }
