@@ -207,6 +207,15 @@ nav{
 
 @media screen and (max-width: 640px) {
 
+    .search-box {
+        width: 100%;
+    }
+
+    .container {
+        text-align: center;
+        width: 100%;
+    }
+
     .wallet-content{
         display: block;
         padding: 0px;
@@ -262,6 +271,14 @@ nav{
         color: white;
         background-image: linear-gradient(90deg, #8a18ed, #6f4791);
         font-weight: 300;
+    }
+
+    .pix {
+        width: 40%;
+        margin: 1%;
+        padding: 4%;
+        float: left;
+        display: block;
     }
 
     
