@@ -217,6 +217,7 @@ nav{
     }
 
     .wallet-content{
+        width: 100%;
         display: block;
         padding: 0px;
     }
@@ -230,6 +231,8 @@ nav{
         display: block;
         width: 100%;
         float: left;
+        padding-right: 0px;
+        padding-left: 0px;
     }
 
     .token-name {
