@@ -94,6 +94,10 @@ label{
     color: white;
 }
 
+.balance-header h3 {
+    width: 100%;
+}
+
 .tokens {
     padding: 10px 15px;
     margin-top: 5px;
@@ -174,7 +178,12 @@ label{
     color: white;
     text-align: center;
 }
+
+.pix img {
+    width: 100%;
+}
 .name {
+    width: 100%;
     border-radius: 5px;
     text-align: center;
     font-size: 18px;
@@ -187,4 +196,73 @@ label{
 .description {
     text-align: left;
     color: whitesmoke;
+}
+
+nav{
+    display: none;
+}
+
+
+/*############### Mobile#############*/
+
+@media screen and (max-width: 640px) {
+
+    .wallet-content{
+        display: block;
+        padding: 0px;
+    }
+    .wallet-details {
+        display: block;
+        width: 100%;
+        padding: 0px;
+    }
+
+    .tokens {
+        display: block;
+        width: 100%;
+        float: left;
+    }
+
+    .token-name {
+        display: block;
+        float: left;
+        width: 40%;
+        padding-right: 5%;
+
+    }
+
+    .token-balance{
+        display: block;
+        float: left;
+        width: 40%;
+        padding-left: 5%;
+        
+    }
+
+    .wallet-name {
+        width: 100%;
+    }
+
+    .address-bar {
+        width: 100%;
+    }
+
+    .navbar{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .navbar div {
+        width: 40%;
+        padding-left: 5%;
+        padding-right: 5%;
+        display: block;
+        float: left;
+        color: white;
+        background-image: linear-gradient(90deg, #8a18ed, #6f4791);
+        font-weight: 300;
+    }
+
+    
 }

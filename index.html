@@ -21,6 +21,8 @@
             </form>
         </div>
 
+        
+
         <div class="wallet-content">
             <div class="wallet-details">
               <div>
@@ -35,7 +37,16 @@
                         <option value="">Fantom Testnet</option>
                     </select>
                 </form>
-                <div class="balance"> 
+
+                <nav class="navbar">
+                    <div onclick="balance()">
+                        <h3>Balance</h3>
+                    </div>
+                    <div onclick="nft()">
+                        <h3>NFTs</h3>
+                    </div>
+                </nav>
+                <div class="balance" id="balance-details" > 
                     <div class="balance-header">
                         <h3>Token's and Balance</h3>
                     </div>
@@ -56,8 +67,8 @@
                                 ETH
                             </div>
                             <div>
-                                $
-                                15790009
+                                $ 15790009
+                                
                             </div>
                         </div>
                     </div>
@@ -75,8 +86,8 @@
                                  ERC20
                              </div>
                              <div>
-                                 $
-                                 1516846.8
+                                 $ 1516846.8
+                                 
                              </div>
                          </div>
                     </div>
@@ -95,8 +106,8 @@
                                 KNC
                              </div>
                              <div>
-                                 $
-                                 1020930.2
+                                 $ 1020930.2
+                                 
                              </div>
                          </div>
                     </div>
@@ -114,15 +125,15 @@
                                 OMG
                              </div>
                              <div>
-                                 $
-                                 490839.72
+                                 $ 490839.72
+                                 
                              </div>
                          </div>
                     </div>
                 </div>
             </div>
 
-            <div class="wallet-details">
+            <div class="wallet-details" id="nft-details" >
                 <div class="nft-details">
                     <h2>NFTs</h2>
                     <h4>Total NTFs: 91</h4>
@@ -192,5 +203,7 @@
         </div>
 
     </div>
+
+    <script src="wallet.js" ></script>
 </body>
 </html>
