@@ -168,9 +168,14 @@ label{
     border: 1px solid white;
     transition: 0.5;
 }
+
+.boxx
+{
+    width: 100%;
+}
 .pix{
     width: 40%;
-    margin: 10px;
+    margin: 5px;
     float: left;
     background-image: linear-gradient(90deg, #8a18ed, #6f4791);
     padding: 20px;
