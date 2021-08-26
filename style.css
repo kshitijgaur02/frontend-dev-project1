@@ -1,293 +1,283 @@
 body {
-    margin: 0;
-    background-color: #1a0329;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #1a0329;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
-    
-    left: 0;
-    right: 0;
+  left: 0;
+  right: 0;
 }
 
 .header {
-    border-bottom: 1px solid white;
-    text-align: center;
-    color: seashell;
-    width: 100%;
-    height: 60px;
+  border-bottom: 1px solid white;
+  text-align: center;
+  color: seashell;
+  width: 100%;
+  height: 60px;
 }
 
-.header-logo{
-    padding-top: 10px;
+.header-logo {
+  padding-top: 10px;
 }
 
 .address-bar {
-    margin-top: 1rem;
-    position: relative;
-    text-align: center;
+  margin-top: 1rem;
+  position: relative;
+  text-align: center;
 }
 
-.search-box{
-    border: 1px solid #dfc9f2;
-    border-radius: 5px;
-    height: 30px;
-    background-color: rgb(82, 81, 87);
-    padding-left: 40px;
-    outline: 0;
-    width: 500px;
+.search-box {
+  border: 1px solid #dfc9f2;
+  border-radius: 5px;
+  height: 30px;
+  background-color: rgb(82, 81, 87);
+  padding-left: 40px;
+  outline: 0;
+  width: 500px;
 }
 
-.search-icon{
-    display: inline-block;
-    position: absolute;
-    width: 28px;
-    border-radius: 5px;
-    color: white;
+.search-icon {
+  display: inline-block;
+  position: absolute;
+  width: 28px;
+  border-radius: 5px;
+  color: white;
 }
 
 .wallet-content {
-    position: relative;
-    height: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    
+  position: relative;
+  height: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
-label{
-    color: whitesmoke;
+label {
+  color: whitesmoke;
 }
 
 .wallet-details {
-    padding-left: 5%;
-    padding-right: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
-.wallet-name{
-    font-weight: 600;
-    color: wheat;
-    height: 30px;
-    width: 70%;
+.wallet-name {
+  font-weight: 600;
+  color: wheat;
+  height: 30px;
+  width: 70%;
 }
 
 .balance {
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-    background-image: linear-gradient(90deg, #8a18ed, #6f4791);
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background-image: linear-gradient(90deg, #8a18ed, #6f4791);
 }
 
 .select-box {
-    border-radius: 5px;
-    background-color: rgb(82, 81, 87);
-    outline: 0;
+  border-radius: 5px;
+  background-color: rgb(82, 81, 87);
+  outline: 0;
 }
 
-.balance-header, .balance-display{
-    float: left;
-    width: 40%;
-    padding: 2% 5% 0 5%;
-    color: black;
+.balance-header,
+.balance-display {
+  float: left;
+  width: 40%;
+  padding: 2% 5% 0 5%;
+  color: black;
 }
-.balance-header{
-    color: white;
+.balance-header {
+  color: white;
 }
 
 .balance-header h3 {
-    width: 100%;
+  width: 100%;
 }
 
 .tokens {
-    padding: 10px 15px;
-    margin-top: 5px;
-    border-radius: 6px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+  padding: 10px 15px;
+  margin-top: 5px;
+  border-radius: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.tokens:hover{
-    background-color: #301a4a;
+.tokens:hover {
+  background-color: #301a4a;
 }
 
 .token-name {
-    display: flex;
+  display: flex;
 }
 
 .token-logo {
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
-    object-fit: cover;
-    margin-right: 10px;
-    background-color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  object-fit: cover;
+  margin-right: 10px;
+  background-color: #fff;
 }
 
 .token-call {
-    font-size: 16px;
-    line-height: 30px;
-    margin: 0;
+  font-size: 16px;
+  line-height: 30px;
+  margin: 0;
 }
 
 .token-balance {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    font-size: 14px
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 14px;
 }
 
 .token-balance div:first-child {
-    margin-bottom: 2px
+  margin-bottom: 2px;
 }
 
-.token-balance div:nth-child(2){
-    color: white;
+.token-balance div:nth-child(2) {
+  color: white;
 }
 
 .nft-details {
-    color: aliceblue ;
+  color: aliceblue;
 }
-.options{
+.options {
+  margin-bottom: 20px;
+  overflow-x: scroll;
+}
+.select {
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600px;
+  margin: 5px;
+  background-color: #3a3a4faf;
+}
+.select:hover {
+  background-color: transparent;
+  border: 1px solid white;
+  transition: 0.5;
+}
 
-    margin-bottom: 20px;
-    overflow-x: scroll;
+.boxx {
+  width: 100%;
 }
-.select{
-    color: white;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 5px;
-    font-weight: 600px;
-    margin: 5px;
-    background-color: #3a3a4faf;
-}
-.select:hover{
-    background-color: transparent;
-    border: 1px solid white;
-    transition: 0.5;
-}
-
-.boxx
-{
-    width: 100%;
-}
-.pix{
-    width: 40%;
-    margin: 5px;
-    float: left;
-    background-image: linear-gradient(90deg, #8a18ed, #6f4791);
-    padding: 20px;
-    border-radius: 10px;
-    color: white;
-    text-align: center;
+.pix {
+  width: 40%;
+  margin: 5px;
+  float: left;
+  background-image: linear-gradient(90deg, #8a18ed, #6f4791);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
 }
 
 .pix img {
-    width: 100%;
+  width: 100%;
 }
 .name {
-    width: 100%;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 18px;
-    margin: 10px;
-    color: black;
-    font-weight: 400;
-    
+  width: 100%;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  margin: 10px;
+  color: black;
+  font-weight: 400;
 }
 
 .description {
-    text-align: left;
-    color: whitesmoke;
+  text-align: left;
+  color: whitesmoke;
 }
 
-nav{
-    display: none;
+nav {
+  display: none;
 }
-
 
 /*############### Mobile#############*/
 
 @media screen and (max-width: 640px) {
+  .search-box {
+    width: 100%;
+  }
 
-    .search-box {
-        width: 100%;
-    }
+  .container {
+    text-align: center;
+    width: 100%;
+  }
 
-    .container {
-        text-align: center;
-        width: 100%;
-    }
+  .wallet-content {
+    width: 100%;
+    display: block;
+    padding: 0px;
+  }
+  .wallet-details {
+    display: block;
+    width: 100%;
+    padding: 0px;
+  }
 
-    .wallet-content{
-        width: 100%;
-        display: block;
-        padding: 0px;
-    }
-    .wallet-details {
-        display: block;
-        width: 100%;
-        padding: 0px;
-    }
+  .tokens {
+    display: block;
+    width: 100%;
+    float: left;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
 
-    .tokens {
-        display: block;
-        width: 100%;
-        float: left;
-        padding-right: 0px;
-        padding-left: 0px;
-    }
+  .token-name {
+    display: block;
+    float: left;
+    width: 40%;
+    padding-right: 5%;
+  }
 
-    .token-name {
-        display: block;
-        float: left;
-        width: 40%;
-        padding-right: 5%;
+  .token-balance {
+    display: block;
+    float: left;
+    width: 40%;
+    padding-left: 5%;
+  }
 
-    }
+  .wallet-name {
+    width: 100%;
+  }
 
-    .token-balance{
-        display: block;
-        float: left;
-        width: 40%;
-        padding-left: 5%;
-        
-    }
+  .address-bar {
+    width: 100%;
+  }
 
-    .wallet-name {
-        width: 100%;
-    }
+  .navbar {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
 
-    .address-bar {
-        width: 100%;
-    }
+  .navbar div {
+    width: 40%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: block;
+    float: left;
+    color: white;
+    background-image: linear-gradient(90deg, #8a18ed, #6f4791);
+    font-weight: 300;
+  }
 
-    .navbar{
-        width: 100%;
-        display: block;
-        text-align: center;
-    }
-
-    .navbar div {
-        width: 40%;
-        padding-left: 5%;
-        padding-right: 5%;
-        display: block;
-        float: left;
-        color: white;
-        background-image: linear-gradient(90deg, #8a18ed, #6f4791);
-        font-weight: 300;
-    }
-
-    .pix {
-        width: 40%;
-        margin: 1%;
-        padding: 4%;
-        float: left;
-        display: block;
-    }
-
-    
+  .pix {
+    width: 40%;
+    margin: 1%;
+    padding: 4%;
+    float: left;
+    display: block;
+  }
 }
