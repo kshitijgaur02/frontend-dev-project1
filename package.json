@@ -1,0 +1,22 @@
+{
+  "name": "web3-wallet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kshitijgaur02/web3-wallet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kshitijgaur02/web3-wallet/issues"
+  },
+  "homepage": "https://github.com/kshitijgaur02/web3-wallet#readme",
+  "dependencies": {
+    "cryptocurrency-icons": "^0.18.0"
+  }
+}

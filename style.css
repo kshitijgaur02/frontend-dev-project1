@@ -70,7 +70,6 @@ label {
 }
 
 .balance {
-  height: 100%;
   width: 100%;
   border-radius: 10px;
   background-image: linear-gradient(90deg, #8a18ed, #6f4791);
