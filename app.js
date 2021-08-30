@@ -1,18 +1,28 @@
-const chain_id = "80001"; // for Polygon testnet
-const address = "0xF0Fc5aE54d1CBDc87545AA7831a8225CB6dE35a0"; // address of the user
+const chain_id = "137";
 const API_KEY = ""; // your covalent API key
+const url = "https://api.covalenthq.com/v1";
+const address = "0xF0Fc5aE54d1CBDc87545AA7831a8225CB6dE35a0"; // address of the user (chain id 137)
+// const address = "0xAb5801a7D398351b8bE11C439e05C5B3259aeC9B"; // vitalik's, use whenever required
+// const address = "0x00d7c902fbbcd3c9db2da80a439c94486c50eb81"; // only 1 nft (chain id 1)
+// const address = "0x51688cd36c18891167e8036bde2a8fb10ec80c43"; // use this to check the nfts (chain id 1 and 137)
 
 let tokenList;
 
 const fetchData = () => {
-  fetch(
-    `https://api.covalenthq.com/v1/${chain_id}/address/${address}/balances_v2/?key=${API_KEY}`
-  )
+  let myHeaders = new Headers();
+  myHeaders.append(
+    "Authorization",
+    `Basic ${API_KEY}`
+  );
+  let requestOptions = {
+    method: "GET",
+    headers: myHeaders,
+    redirect: "follow",
+  };
+
+  fetch(`${url}/${chain_id}/address/${address}/balances_v2/`, requestOptions)
     .then((response) => response.json())
     .then((data) => {
-      console.log("data", data);
-
-      //   Crypto in the wallet
       tokenList = data.data.items;
 
       createImg = (src) => {
@@ -82,6 +92,9 @@ const fetchData = () => {
         // put the tokenList inside the main container
         document.getElementById("token-container").appendChild(tokenList);
       });
+    })
+    .catch((err) => {
+      console.log("err", err);
     });
 };
 
