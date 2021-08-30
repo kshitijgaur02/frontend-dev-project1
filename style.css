@@ -47,7 +47,7 @@ body {
 
 .wallet-content {
   position: relative;
-
+  height: 100%;
   padding-left: 30px;
   padding-right: 30px;
   display: grid;
@@ -184,11 +184,13 @@ label {
   width: 100%;
 }
 .name {
+  width: 100%;
   border-radius: 5px;
-  text-align: left;
+  text-align: center;
   font-size: 18px;
+  margin: 10px;
   color: black;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .description {
@@ -221,7 +223,6 @@ nav {
     display: block;
     width: 100%;
     padding: 0px;
-    
   }
 
   .tokens {
