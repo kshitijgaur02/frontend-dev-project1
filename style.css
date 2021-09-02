@@ -169,7 +169,13 @@ label {
 .boxx {
   width: 100%;
 }
-.pix {
+
+#nft-container{
+  /* display: flex;  */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+/* .pix {
   width: 40%;
   margin: 5px;
   float: left;
@@ -182,8 +188,8 @@ label {
 
 .pix img {
   width: 100%;
-}
-.name {
+} */
+/* .name {
   width: 100%;
   border-radius: 5px;
   text-align: center;
@@ -196,7 +202,7 @@ label {
 .description {
   text-align: left;
   color: whitesmoke;
-}
+} */
 
 nav {
   display: none;
