@@ -97,9 +97,9 @@ const fetchData = () => {
         // put the tokenList inside the main container
         document.getElementById("token-container").appendChild(tokenList);
 
-        
+        if(token.quote>0){
           balanceSum += token.quote;
-          console.log("forEach",balanceSum);
+          console.log("forEach",balanceSum);}
          
         
       });
