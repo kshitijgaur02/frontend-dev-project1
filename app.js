@@ -1,12 +1,15 @@
-const chain_id = "137";
-const API_KEY = ""; // your covalent API key
+const chain_id = "1";
+const API_KEY = "Y2tleV9lZDMzOTIyNjFlNzA0MzA0ODI1MjZkMzgyYjA6"; // your covalent API key
 const url = "https://api.covalenthq.com/v1";
-const address = "0xF0Fc5aE54d1CBDc87545AA7831a8225CB6dE35a0"; // address of the user (chain id 137)
+const address = "0x00d7c902fbbcd3c9db2da80a439c94486c50eb81"; // address of the user (chain id 137)
 // const address = "0xAb5801a7D398351b8bE11C439e05C5B3259aeC9B"; // vitalik's, use whenever required
 // const address = "0x00d7c902fbbcd3c9db2da80a439c94486c50eb81"; // only 1 nft (chain id 1)
 // const address = "0x51688cd36c18891167e8036bde2a8fb10ec80c43"; // use this to check the nfts (chain id 1 and 137)
 
 let tokenList;
+var balanceSum = 0;
+
+
 
 const fetchData = () => {
   let myHeaders = new Headers();
@@ -59,6 +62,8 @@ const fetchData = () => {
         return tokenImg;
       };
 
+      
+
       //   not really a fan of the code below. I would like to take some other approach
       tokenList.forEach(async (token) => {
         const tokenList = document.createElement("div");
@@ -91,11 +96,37 @@ const fetchData = () => {
 
         // put the tokenList inside the main container
         document.getElementById("token-container").appendChild(tokenList);
+
+        
+          balanceSum += token.quote;
+          console.log("forEach",balanceSum);
+         
+        
       });
+      
+      setTimeout(() => {
+        let totalBalance = document.getElementById("total-balance");
+        totalBalance.innerText = "Balance: $" + balanceSum;
+      },100); 
+      
     })
     .catch((err) => {
       console.log("err", err);
     });
+
+
+     
+    
 };
 
+
+
 fetchData();
+
+
+
+
+
+
+
+
