@@ -147,11 +147,11 @@ label {
 .nft-details {
   color: aliceblue;
 }
-.options {
+#options {
   margin-bottom: 20px;
   overflow-x: scroll;
 }
-.select {
+.selectnft, .selectallnft {
   color: white;
   padding: 8px 16px;
   border: none;
@@ -160,7 +160,12 @@ label {
   margin: 5px;
   background-color: #3a3a4faf;
 }
-.select:hover {
+.selectnft:hover {
+  background-color: transparent;
+  border: 1px solid white;
+  transition: 0.5;
+}
+.selectallnft:hover{
   background-color: transparent;
   border: 1px solid white;
   transition: 0.5;

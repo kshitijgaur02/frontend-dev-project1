@@ -54,7 +54,7 @@
                         <h3>Token's and Balance</h3>
                     </div>
                     <div class="balance-display">
-                        <h3 id="total-balance">Total Balance: $0</h3>
+                        <h3 id="total-balance"></h3>
                     </div>
 
                     <div id="token-container"></div>
@@ -64,17 +64,10 @@
             <div class="wallet-details" id="nft-details">
                 <div class="nft-details">
                     <h2>NFTs</h2>
-                    <h4>Total NTFs: 91</h4>
+                    <h4 id="total-NFTs"></h4>
                 </div>
-                <div class="boxx">
-                    <div class="options">
-                        <button class="select">ALL</button>
-                        <button class="select">DOMAIN</button>
-                        <button class="select">GENESIS</button>
-                        <button class="select">WIP</button>
-                        <button class="select">NATION</button>
-                        <button class="select">MEGACITY</button>
-                    </div>
+                <div class="boxx" id="nft-boxx">
+                    <div id="options"></div>
                     <div class="pixx">
                         <div class="pixx-list row" id="nft-container"></div>
                     </div>
@@ -85,11 +78,12 @@
         </div>
 
     </div>
-
-    <script src="wallet.js"></script>
-    <script src="app.js"></script>
-    <script src="scripts/nftCard.js"></script>
-    <script src="scripts/nftData.js"></script>
+<script src="wallet.js"></script>
+<script src="app.js"></script>
+<script src="scripts/nftCard.js" defer></script>
+<script src="scripts/nftData.js"></script>
 </body>
+
+
 
 </html>

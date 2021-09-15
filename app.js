@@ -1,7 +1,7 @@
 const chain_id = "1";
-const API_KEY = "Y2tleV9lZDMzOTIyNjFlNzA0MzA0ODI1MjZkMzgyYjA6"; // your covalent API key
+const API_KEY = "Y2tleV9lZDMzOTIyNjFlNzA0MzA0ODI1MjZkMzgyYjA6"; // your covalent API key else Y2tleV9lZDMzOTIyNjFlNzA0MzA0ODI1MjZkMzgyYjA6
 const url = "https://api.covalenthq.com/v1";
-const address = "0x00d7c902fbbcd3c9db2da80a439c94486c50eb81"; // address of the user (chain id 137)
+const address = "0x51688cd36c18891167e8036bde2a8fb10ec80c43"; // address of the user (chain id 137)
 // const address = "0xAb5801a7D398351b8bE11C439e05C5B3259aeC9B"; // vitalik's, use whenever required
 // const address = "0x00d7c902fbbcd3c9db2da80a439c94486c50eb81"; // only 1 nft (chain id 1)
 // const address = "0x51688cd36c18891167e8036bde2a8fb10ec80c43"; // use this to check the nfts (chain id 1 and 137)
